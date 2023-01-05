@@ -1,0 +1,18 @@
+.loader{
+  font-size: 20px;
+  color: #000;
+  animation: smokeOut 1s ease-in-out infinite alternate;
+  text-shadow: 0 0 1px black;
+  margin-top: 390px;
+}
+.loader:before {
+  content: "Loading...";
+}
+
+@keyframes smokeOut {
+  100% {
+    opacity: 0.08;
+    filter: blur(5px);
+    letter-spacing: 4px;
+  }
+}

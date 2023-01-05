@@ -1,0 +1,59 @@
+.modal {
+  background-color: rgb(0 0 0 / 47%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+  height: 100vh;
+  width: 100vw;
+}
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.modal-content {
+  padding: 20px;
+  border-radius: 12px;
+  background-image: url(../assets/background-item.jpg);
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  transform: scale(0.5);
+  transition: 0.4s all;
+  width: 500px;
+}
+.modal-content.active {
+  transform: scale(1);
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 8px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}

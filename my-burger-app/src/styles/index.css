@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap');
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Diplomata SC', cursive;
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.app-name {
+  font-size: 30px;
+  font-weight: 700;
+}
+#logo {
+  background-color: transparent;
+  width: 90px;
+  height: 80px;
+}
+
+#logo > img {
+  width: 100%;
+  height: 100%;
+}
+
+.header-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.header-item:hover {
+  text-shadow: 0px 0px 2px rgb(68, 68, 68);
+  cursor: pointer;
+  border-bottom: 4px solid black;
+}
+
+.price-header {
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 2px solid black;
+}
+.price-item {
+  width: 100%;
+  height: 70px;
+  margin-top: 27px;
+  font-weight: 700;
+  font-size: 16px;
+}
+.controls-header {
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 2px solid black;
+}
+#controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../assets/background-item.jpg);
+  background-size: cover;
+  width: 20%;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 27px 20px 0;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.controls-list {
+  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.counter-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.counter {
+  margin: 0 6px;
+}
+
+.counter-btn {
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 1px 1px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.plus:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 1px;
+  left: 1px;
+}
+.minus:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 1px;
+  right: 1px;
+}
+.counter-name {
+  min-width: 52px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.controls-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+}
+
+#price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../assets/background-item.jpg);
+  background-size: cover;
+  margin-right: 67px;
+  width: 20%;
+  padding: 27px 20px 0;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#burger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../assets/background-item.jpg);
+  background-size: cover;
+  position: relative;
+  margin-right: 67px;
+  width: 60%;
+  padding: 27px 20px 0;
+  border-radius: 20px;
+  height: 898px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#content-wrapper {
+  margin-top: 19px;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+#logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#header-item-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+#app-name-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  height: 120px;
+  background-image: url(../assets/background-item.jpg);
+  background-size: cover;
+  background-repeat: round;
+  background-position: start;
+  padding: 0 28px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.ingredients-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ingredients-container > img {
+  width: 180px;
+}
+
+.burger-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 860px;
+  padding: 20px 0;
+}
+
+.button-54 {
+  margin-bottom: 20px;
+  font-family: 'Diplomata SC', cursive;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000;
+  border-radius: 20px;
+  cursor: pointer;
+  background: none;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+.order-btn {
+  width: 140px;
+  font-size: 10px;
+}
+.order-buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.cancel {
+  background: rgb(162 81 84 / 47%);
+}
+.submit {
+  background: rgb(39 117 96 / 47%);
+}
+.order-input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.order-input:focus-visible {
+  outline: none;
+  border-radius: 3px;
+}
+.error {
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: rgb(175 5 12);
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.ingredient-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid gray;
+  width: 100%;
+}
+
+.icon {
+  width: 88px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+.label {
+  display: block;
+}
+.quick-delivery {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  font-size: 13px;
+  padding: 5px;
+}
+input[type='checkbox'] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--form-background);
+  margin: 0;
+
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 6px;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+
+input[type='checkbox']::before {
+  content: '';
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  background-color: CanvasText;
+}
+
+input[type='checkbox']:checked::before {
+  transform: scale(1);
+}
+
+input[type='checkbox']:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+}
